@@ -25,4 +25,7 @@ app.get('/register', (req, res) => {
 });
 
 // Public (static) Listen Server
-app.listen(3007, () => console.log(`Server up on PORT:  http://localhost:3007`));
+//app.listen(3007, () => console.log(`Server up on PORT:  http://localhost:3007`));
+
+const port = process.env.PORT || 3007
+app.listen(port,()=>console.log(`Servidor corriendo en el puerto ${port}`));
