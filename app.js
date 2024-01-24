@@ -5,17 +5,22 @@ app.use(express.static('public'));
 
 // Routes
 app.get('/', (req, res) => {
-    const pathHome = path.join(__dirname, 'public/views/home.html');
+    const pathHome = path.join(__dirname, './views/home.html');
+    res.sendFile(pathHome);
+});
+
+app.get('/home', (req, res) => {
+    const pathHome = path.join(__dirname, './home.html');
     res.sendFile(pathHome);
 });
 
 app.get('/login', (req, res) => {
-    const pathLogin = path.join(__dirname, 'public/views/login.html');
+    const pathLogin = path.join(__dirname, './views/login.html');
     res.sendFile(pathLogin);
 });
 
 app.get('/register', (req, res) => {
-    const pathRegister = path.join(__dirname, 'public/views/register.html');
+    const pathRegister = path.join(__dirname, './views/register.html');
     res.sendFile(pathRegister);
 });
 

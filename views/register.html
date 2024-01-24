@@ -5,8 +5,9 @@
     <meta charset="UTF-8"> <!-- Codificacion del archivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi ecommerce</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./public/img/logo2.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="./public/img/logoMercadolibre.jpg">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/register.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     <header class="header-top">
         <!-- Encabezado PRINCIPAL-->
         <div class="top">
-            <a class="logoE" href="/views/home.html">
+            <a class="logoE" href="/">
                 <img id="logo" title="ecommerce" src="/img/logo.svg" >
             </a>
             <h1 hidden>Mi ecommerce</h1>
@@ -69,10 +70,10 @@
                 <!-- Lista desordenada -->
                 <ul class="list">
                     <li>
-                        <a href="register.html">Crea tu cuenta <i class="fa-regular fa-id-card"></i> </a>
+                        <a href="register">Crea tu cuenta <i class="fa-regular fa-id-card"></i> </a>
                     </li>
                     <li>
-                        <a href="login.html">Inicia Sesión <i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="login">Inicia Sesión <i class="fa-solid fa-right-to-bracket"></i></a>
                     </li>
                     <li>
                         <a href="misCompras.html">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
@@ -86,21 +87,49 @@
     <main>
         <!-- Contenido principal -->
         <br>
-        <div class="formulario">
-            <form action="">
-                <h3>Acceder</h3>
-                
-                <input placeholder="Nombre de Usuario" type="text" id="txtUsername" required="true">
-                
-                <input  placeholder="Elegí tu contraseña" type="password" id="txtPassword" required="true">
-                <br/>
-                <button class="btn-login">Enviar</button>
-                <br>
-                <h4>O INICIE SESIÓN CON </h4>
-            </form>
-        </div>
+                <div class="formulario">
+                    <br>
+                    <br>
+                    <form action="/registro" method="POST">               
+                        <input placeholder="Nombre y Apellido" type="text" id="txtNameApellido" required="true">
+                        <br/>                        
+                        <input  placeholder="E-mail" type="email" id="textEmail" required="true">
+                        <br/>
+                        <label class="datFormulario" for="dateOfBirth"><b>Fecha de nacimiento</b></label>
+                        <br>
+                        <input type="date" id="dateOfBirth" name="fechaNacimiento" required="true">
+                        <br/>
 
-        <br>
+
+                        <br/>  
+                        <label><b>Perfil del usuario</b></label>
+                        <div class="form-row">
+
+                        
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="compra">Comprador</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="vende">Vendedor</label>
+                        </div>
+                        <br/>
+                        <br/> 
+                         <label><b>Intereses:</b></label>
+                            <input class="interes" type="checkbox" id="interesElectro">Electro</input>
+                            <input type="checkbox" id="interesModa">Moda</input>
+                            <input type="checkbox" id="interesHogar">Hogar</input>
+                            <input type="checkbox" id="interesJugueteria">Jugueteria</input>
+                            <input type="checkbox" id="interesVidaSana">Vida Sana</input>
+                        <br/>
+                        <input  placeholder="Nombre de usuario" type="text" id="txtUsername" required="true">
+                        <br>
+                        <input  placeholder="Elige tu contraseña" type="password" id="txtPassword" required="true">
+                        <!-- Botón de Enviar -->
+                        <button class="btn-login boton-login" type="submit">Enviar</button>
+                        <br>
+                    </form>
+                </div>
+
+                <br>
     </main>
 
     <footer>

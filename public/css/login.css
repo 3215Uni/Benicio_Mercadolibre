@@ -1,0 +1,28 @@
+body{
+    background-color: #ebebeb;
+}
+.formulario{
+    width: 100%;
+    text-align: center;
+    margin: 20px 30px;
+}
+input{
+    width: 50%;
+    size: 12px;
+    display: inline;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    margin: 5px 15px;
+}
+.btn-login{
+    width: 50%;
+    background-color: rgb(0,68,170);
+    display: inline ;
+    padding: 10px;
+    text-align: auto;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    margin: 10px 15px;
+}

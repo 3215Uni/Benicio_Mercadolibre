@@ -245,6 +245,7 @@ h2{
 footer {
     background-color: white;
     padding: 10px 0px;
+    margin-bottom: 0px;
 }
 .section-container {
     text-align: center; /* Alinea el contenido al centro */
@@ -343,6 +344,7 @@ footer {
     }
     .footer-section {
         width: 28%; 
+        margin-bottom: 0%;
     }
 
 
