@@ -46,14 +46,14 @@ img#logo{
     background:#EAC926;
 }
 
-.top > form#search{
+.top > form#busqueda{
     background-color: white;
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-form#search >  input{
+form#busqueda >  input{
     width: 100%;
     height: 10%;
     outline: none;
@@ -61,7 +61,7 @@ form#search >  input{
     padding:1% 0.5%;
 }
 
-form#search >  button{
+form#busqueda >  button{
     outline: none;
     height: 20px;
     width: 20px;
@@ -243,9 +243,9 @@ h2{
 /* Estilos generales para cada sección */
 
 footer {
-    background-color: white;
-    padding: 10px 0px;
+    background-color: white;    
     margin-bottom: 0px;
+    text-align: center;
 }
 .section-container {
     text-align: center; /* Alinea el contenido al centro */
@@ -253,18 +253,19 @@ footer {
 .footer-section {
     display: inline-block;
     margin: 0 9px; /* Añade un margen entre las secciones */
-    padding: auto;
+    padding: 1%;
     box-sizing: border-box;
     vertical-align: top; /* Alinea las secciones en la parte superior */
-    
+    text-align: center;
 }
-.footer-section-1{
-    margin-left: 4%;
-    }
 .footer-icono{
     size: 2em;
     text-align: center;
-    color: #03264C;
+    color: #056bda;
+}
+.footer-icono:hover{
+    color: #39b54a;
+    font-size: 2.5em;
 }
 /* Estilos específicos para títulos y párrafos */
 .footer-titulo {
@@ -295,15 +296,15 @@ footer {
         justify-content: flex-start;
         
     }
-/* para el search del nav*/
-    form#search >  input{
+/* para el busqueda del nav*/
+    form#busqueda >  input{
      /*   width: 200px;*/
      width: 100%;
     }
     logoE{
         width: 50%;
     }
-    form#search{
+    form#busqueda{
         width: 50%;
     }
     .footer-section {
@@ -385,6 +386,7 @@ footer {
     article{
         cursor: pointer;
         transition: box-shadow, .5s, scale,.5s;
+        align-items: center;
     }
 
     article:hover{

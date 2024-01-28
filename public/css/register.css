@@ -9,14 +9,25 @@ body {
     text-align: left; /* Ajusta el texto del formulario a la izquierda */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega sombra para destacar el formulario */
     border-radius: 10px; /* Añade bordes redondeados al formulario */
+    background-color: white;
 }
-
+.form-titulo{
+    text-align: center;
+    color: #056bda;
+}
 input {
     width: calc(100% - 20px); /* Ancho del 100% con 20px de espacio alrededor */
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 0.5px solid #ccc;
     border-radius: 5px;
     margin: 5px 0;
+}
+.input:focus{
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul alrededor del input */
+
+}
+.input:active{
+    border: 0.5px solid #2553dc;
 }
 .form-row {
     display: flex;
@@ -33,14 +44,44 @@ label {
 .datFormulario {
     text-align: left;
 }
+.radios{
+    margin-right: 2%;
+}
+/********************radio *********************/
+
+.radio-cajas{
+    align-content: center;
+    border: 0.4px solid #ccc;
+    background-color: #f1f3ff;
+    border-radius: 3%;
+    padding: 2%;
+    width: 47%;    
+    text-align: center;    
+}
+.radio-cajas:hover{
+    background-color: #fbfbff;
+}
+/*****************************************/
+/******************checkbox ***********************/
+
+
+
+
+/*****************************************/
+
+
 
 .btn-login {
     width: calc(100% - 20px);
-    background-color: rgb(0, 68, 170);
+    background-color: rgb(31, 99, 200);
     padding: 10px;
     color: white;
     border-radius: 5px;
     border: 0;
     margin: 10px 0;
     cursor: pointer;
+}
+.btn-login:hover {
+    width: calc(100% - 20px);
+    background-color: rgb(5, 34, 77);
 }
