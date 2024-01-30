@@ -118,10 +118,6 @@
 
                         <input  placeholder="Nombre de usuario" type="text" id="txtUsername" required="true">
                         <br>
-                        <label class="datFormulario" for="dateOfBirth"><b>Contraseña</b></label>
-                        <input  placeholder="Elige tu contraseña" type="password" id="txtPassword" required="true">
-                        <label class="datFormulario" for="dateOfBirth"><b>Repite contraseña</b></label>
-                        <input  placeholder="Repite tu contraseña" type="password" id="txtPassword2" required="true">  
                         <label><b>Perfil del usuario</b></label>
                         <div id="radios" class="radios form-row">
                             <div class="radio-cajas">
@@ -134,17 +130,33 @@
                             </div>
                         
                         </div>
-                        <br/>
+                        
                         <br/> 
-                         <label class="titulo-Interese"><b>Intereses:</b></label>
-                            <input class="interes" type="checkbox" id="interesElectro" required="true">Electro</input>
-                            <input class="interes" type="checkbox" id="interesModa" required="true">Moda</input>
-                            <input class="interes" type="checkbox" id="interesHogar" required="true">Hogar</input>
-                            <input class="interes" type="checkbox" id="interesJugueteria" required="true">Jugueteria</input>
-                            <input class="interes" type="checkbox" id="interesVidaSana" required="true">Vida Sana</input>
+                        <label class="titulo-Interese"><b>Intereses:</b>
+                            <label class="interes-label" for="interesElectro"><input class="interes" type="checkbox" id="interesElectro" > Electro</label>
+                            <label class="interes-label" for="interesModa"><input class="interes" type="checkbox" id="interesModa" > Moda</label>
+                            <label class="interes-label" for="interesHogar"><input class="interes" type="checkbox" id="interesHogar" > Hogar</label>
+                            <label class="interes-label" for="interesJugueteria"><input class="interes" type="checkbox" id="interesJugueteria" > Jugueteria</label>
+                            <label class="interes-label" for="interesVidaSana"><input class="interes" type="checkbox" id="interesVidaSana">Vida<b class="cl">_</b>Sana</label>
+                        </label>
+
                         <br/>
+                        <label for="foto">Foto de Usuario:</label>
+                        <input type="file" id="foto" name="foto" accept="image/*">
+                        
+                        <label class="datFormulario" for="dateOfBirth"><b>Contraseña</b></label>
+
+                        <input  placeholder="Elige tu contraseña" type="password" id="txtPassword" required="true">
+                        <label class="datFormulario" for="dateOfBirth"><b>Repite contraseña</b></label>
+                        <input  placeholder="Repite tu contraseña" type="password" id="txtPassword2" required="true">  
+                        <br>
+                        <br>
                         <!-- Botón de Enviar -->
-                        <button class="btn-login boton-login" type="submit">Enviar</button>
+                        
+                            <button class="btn-login boton-login" type="submit">Enviar</button>
+                            <button class="btn-reset" type="reset">Borrar</button>
+                        
+                        
                         <br>
                     </form>
                 </div>
