@@ -1,7 +1,154 @@
-body {
-    background-color: #ebebeb;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   /* nav superior*/
+   body{
+       /*background: rgba(5, 152, 249, 0.479);*/
+   /*   background: rgba(252, 222, 0);*/
+       /*background:#FFE600;*/
+       background-color: #ebebeb;
+       font-family: 'Roboto', sans-serif;
+   }
+
+   .header-top{
+       width: 100%;
+       border-bottom: 0  solid white;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+   .centro{
+    text-align: center;
+    margin-bottom: 2%;
+   }
+
+   .top{
+       padding: 1% 0%;
+       width: 100%;
+       display: flex;
+       background:#FFE600;
+       align-items: center;
+       justify-content: space-evenly;
+   }
+   
+/*Logo de mercadolibre*/
+img#logo{
+    width: 77%;    
+    padding: 0%;
+    border: 0%;
+    
 }
 
+.header-bottom{
+    display: none;
+    background:#FFE600;
+}
+/*BARRITA DE BUSQUEDA CON ICONO LUPA*/
+.top > form#busqueda{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+form#busqueda >  input{
+    width: 100%;
+    height: 10%;
+    outline: none;
+    border: 1px solid transparent;
+    padding:1% 0.5%;
+}
+form#busqueda >  button{
+    outline: none;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-left: 1px  solid #FFE600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > .fa-magnifying-glass{
+    color: rgb(145, 145, 145);
+    font-size: 10px;
+}
+
+   a {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+   a:hover{
+    color: #056bda;
+   }
+   a:visited{
+       color: black;
+   }
+   .cen{
+    align-content: center;
+   }
+
+   .centro{
+    text-align: center;
+    margin-bottom: 2%;
+
+   }
+   .header-bottom{
+    display: none;
+    background:#FFE600;
+}
+   .menu-bars{
+    display: none;
+    padding:3%;
+    background-color: #056bda;
+    color: white;
+    border-radius: 18%;
+} 
+   .banner{   
+       width: 100%;
+       max-width: 100%;
+       height: auto;
+       margin-bottom: 20px;   
+   }
+
+
+ 
+    li {
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 0%;
+        transition: background-color 1s;
+        list-style: none;
+        display: inline-block; /* Agrega esta línea para que los elementos li estén en línea */
+    }
+
+    li:hover {
+        background-color: rgba(5, 152, 249, 0.479);
+    }
+
+
+    .header-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        padding: 10px 0px;
+        background-color: #FFE600;
+        width: 50%;
+    }
+
+
+
+
+   /**************************MAIN***************************/
 .formulario {
     width: 50%;
     margin: 20px auto; /* Establece el margen superior e inferior en 20px y centra horizontalmente */
@@ -13,7 +160,7 @@ body {
 }
 .form-titulo{
     text-align: center;
-    color: #056bda;
+    color: #3483fa;
 }
 input {
     width: calc(100% - 20px); /* Ancho del 100% con 20px de espacio alrededor */
@@ -27,7 +174,7 @@ input {
 
 }
 .input:active{
-    border: 0.5px solid #2553dc;
+    border: 0.5px solid 1259c3;
 }
 .form-row {
     display: flex;
@@ -98,7 +245,7 @@ color: white;
 }*/   
 button {
     padding: 10px;
-    background-color: #056bda;
+    background-color: #3483fa;
     color: white;
     border: none;
     border-radius: 5px;
@@ -108,9 +255,165 @@ button {
     margin-right: 10px; /* Añade un margen derecho para separar los botones */
 }
 button[type="reset"] {
-    background-color: #056bda;
+    background-color: #3483fa;
     margin-right: 0; /* No añade margen derecho al botón "Borrar Datos" */
 }
 button:hover{
-    background-color: #39b54a;
+    background-color: #1259c3;
 }
+
+
+/**************************** FOOTER ********************************/
+/* Estilos generales para cada sección */
+
+footer {
+    background-color: white;    
+    margin-bottom: 0px;
+    text-align: center;
+}
+.section-container {
+    text-align: center; /* Alinea el contenido al centro */
+}
+.footer-section {
+    width: 28%; 
+    margin-bottom: 0%;
+}
+
+.footer-section {
+    display: inline-block;
+    margin: 0 9px; /* Añade un margen entre las secciones */
+    padding: 1%;
+    box-sizing: border-box;
+    vertical-align: top; /* Alinea las secciones en la parte superior */
+    text-align: center;
+}
+.footer-icono{
+    size: 2em;
+    text-align: center;
+    color: #3483fa;
+}
+.footer-icono:hover{
+    color: #1259c3;
+    font-size: 2.5em;
+}
+/* Estilos específicos para títulos y párrafos */
+.footer-titulo {
+    color: #333;
+    text-align: center;
+}
+
+.footer-parrafo {
+    color: #666;
+    text-align: justify;
+}
+
+.copyright p{
+    text-align: start;
+    size: 12px;
+}
+   
+/*******************************************************/
+/********************  CELULAR  *************************/
+@media(max-width: 360px){
+    .top{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    #logo{
+        margin-left: 24%;
+        margin-top: 2%;
+        margin-bottom: 2%;   
+    }
+    form#busqueda{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .bo {
+        display: inline-block;
+        align-content: center;    
+    }
+    .ok{
+        display: inline-block;
+        margin-left: 47%;
+        margin-bottom: 2%;
+        
+    }
+    footer{        
+        display: block;
+    }
+    .footer-section{
+        width: 70%;
+    }
+    .formulario {
+        width: 90%;
+    }
+    .copyright p{
+    text-align: start;   
+    }
+}
+/*******************************************************/   
+/******************** TABLET *************************/
+
+    @media (min-width: 361px){
+        .nav-menu {
+            display: block; 
+        }
+        .logo{
+            width: 100px;
+        }
+        .header-bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+        padding: 10px 0px;
+        background-color: #FFE600;        /*EL color del seguna columnas donde esta elnav de menu*/
+        width: 50%;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            
+            justify-content: center;
+        }
+        
+        a{
+            font-size: 1.7vw;
+        }
+        a:visited{
+        color: #056bda;
+        }
+        .formulario {
+            width: 70%;
+    }
+    .footer-section{
+        width: 45%;
+    }
+    .copyright p {
+        text-align: start;
+      }    
+    }
+    
+/*******************************************************/
+/********************  DESKTOP *************************/
+@media (min-width: 769px) {
+    .formulario {
+        width: 40%;
+    }
+    .header-top > nav{
+        display: block;
+    }
+    a:hover{
+    color: #056bda;
+    }
+    a{
+        font-size: 1.5vw;
+    }
+ 
+    .footer-section{
+        width: 30%;
+    }
+    }

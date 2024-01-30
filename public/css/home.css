@@ -9,7 +9,7 @@ body{
 /*   background: rgba(252, 222, 0);*/
     /*background:#FFE600;*/
     background-color: #ebebeb;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 .header-top{
@@ -20,11 +20,15 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-
+.bo.top {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+  }
 .top{
     padding: 1% 0%;
     width: 100%;
-    display: flex;
+    display: inline-flex;
     background:#FFE600;
     align-items: center;
     justify-content: space-evenly;
@@ -32,14 +36,15 @@ body{
 
 /*Logo de mercadolibre*/
 img#logo{
-    width: 50%;    
+    width: 77%;    
     padding: 0%;
     border: 0%;
+    
 }
 
 .header-bottom{
     display: none;
-    background:#EAC926;
+    background:#FFE600;
 }
 /*BARRITA DE BUSQUEDA CON ICONO LUPA*/
 .top > form#busqueda{
@@ -47,8 +52,8 @@ img#logo{
     display: flex;
     align-items: center;
     height: 100%;
+    width: 30%;
 }
-
 form#busqueda >  input{
     width: 100%;
     height: 10%;
@@ -64,7 +69,7 @@ form#busqueda >  button{
     background-color: white;
     padding: 10px;
     border: 1px solid transparent;
-    border-left: 1px  solid #EAC926;
+    border-left: 1px  solid #FFE600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,12 +77,13 @@ form#busqueda >  button{
 
 button > .fa-magnifying-glass{
     color: rgb(145, 145, 145);
-    
     font-size: 10px;
 }
 
-a{
+a {
+    font-size: 1em;
     color: black;
+    text-decoration: none;    
 }
 
 a:visited{
@@ -90,15 +96,19 @@ a:visited{
     padding: 3%;
     border-radius: 10%;
     align-items: center;
-    
+    margin-left: 45%;
 }
 .banner{   
     width: 100%;
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-
 }
+.cart{
+    width: 33%;
+}
+
+
 /* main */
 main{
     width: 100%;
@@ -129,22 +139,23 @@ section{
 article{
     background-color: white;
     width: 250px;
+    min-height: 300px;
     padding: 15px;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.fa-heart{
+.corazon{
     position: absolute;
     top: 10px;
+    color: #3483fa;
     right: 10px;
 }
 
 article > img.img-product{
-    width: 100px;
-    margin: auto;
-    /**************ESTO LO PUSO QUIZAS SEA PORVISORIOOOO*********************/
+    width: 120px;
+    margin: auto;   
     margin-bottom: 10%;
 }
 .caja{
@@ -187,6 +198,7 @@ h2{
     display:flex ;
 }
 .price{
+    margin-right: 10%;
     font-size: 18px;
     font-weight: 600;
     width: 30%; /* Ocupa el 30% del contenedor padre */
@@ -194,7 +206,8 @@ h2{
 
 .descuento {
     font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
-    width: 70%; /* Ocupa el 70% del contenedor padre */
+    width: 90%; /* Ocupa el 70% del contenedor padre */
+    right: 5px;
     color:#39b54a;
 }
 
@@ -271,10 +284,10 @@ footer {
 .footer-icono{
     size: 2em;
     text-align: center;
-    color: #056bda;
+    color: #3483fa;
 }
 .footer-icono:hover{
-    color: #39b54a;
+    color: #1259c3;
     font-size: 2.5em;
 }
 /* Estilos específicos para títulos y párrafos */
@@ -289,19 +302,35 @@ footer {
 }
 
 .copyright p{
-    text-align: center;
+    text-align: start;
     size: 12px;
 }
-
-/****************************RESPONSIVE***************************************************************/
+/************************************************************************/
+/****************************RESPONSIVE**********************************/
+/***********************celular******************************************/
 @media(max-width: 360px){
-    .bo {
-        display: block;
-        align-content: center;    
+    .menu-bars{
+            display: none;
     }
+    .bo.top {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna para que estén uno encima del otro */
+        align-items: center; /* Centra horizontalmente los elementos en el contenedor */
+        
+      }
+      .logoE,
+      #busqueda,
+      .cart,
+      .menu-bars {
+        width: 100%; /* Establece el ancho al 100% para ocupar todo el ancho disponible */
+        margin-bottom: 10px; /* Añade un margen inferior entre los elementos */
+      }
     form#busqueda{
-        width: 80%;
-        align-content: center;   
+        width: 100%;
+        
+    }
+    .menu-bars{
+        display: flex;
     }
     .bo.header-bottom {
         display: none;
@@ -314,16 +343,57 @@ footer {
     .caja:hover > .description{
         display: block;
     }
-    
-
+ 
+.copyright p{
+    text-align: start;   
 }
+}
+/************************************************************************/
+/*******************************TABLET***********************************/
 @media (min-width: 361px){
+    
+        .nav-menu {
+            display: block; 
+        }
+        .logo{
+            width: 100px;
+        }
+        .header-bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+        padding: 10px 0px;
+        background-color: #FFE600;        /*EL color del seguna columnas donde esta elnav de menu*/
+        width: 50%;
+        }
+        ul{
+            list-style: none;
+            display: flex;    
+            justify-content: center;
+        }
+        a{
+            font-size: 1.8vw;
+        }
+        a:visited{
+        color: #056bda;
+        
+        }
+        .formulario {
+            width: 70%;
+    }
+
     i{
         font-size: 1.3em;
     }
     section{
         align-items: flex-start;
     }
+    .menu-bars{
+        display: none;
+    }
+   
     .articles{
         justify-content: flex-start;        
     }
@@ -332,8 +402,12 @@ footer {
      /*   width: 200px;*/
      width: 100%;
     }
-    logoE{
-        width: 50%;
+    .header-bottom{
+        display: flex;
+        background:#FFE600;
+    }
+    ul{
+        list-style-type: none;
     }
     form#busqueda{
         width: 50%;
@@ -344,10 +418,14 @@ footer {
     .caja:hover > .description{
         display: block;
     }
-   
+    
+.copyright p{
+    text-align: start;
 }
 
-
+}
+/************************************************************************/
+/*****************************DESKTOP************************************/
 @media (min-width: 769px) {
     .header-top {
         display: flex;
@@ -362,31 +440,31 @@ footer {
     .header-top > nav{
         display: block;
     }
-
+    a{
+        font-size: 1.5vw;
+    }
+ 
     .menu-bars{
         display: none;
     }
-
     .header-bottom{
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
+    .bo{
+        display: block;
+    }
     .footer-section {
         width: 28%; 
         margin-bottom: 0%;
     }
-
-
-
-
 /*EL color del seguna columnas donde esta elnav de menu*/
     nav{
         padding: 10px 0px;
         background-color: #FFE600;        
-        width: 50%;
+/*        width: 50%;*/
     }
-
     ul{
         list-style: none;
         display: flex;
@@ -421,14 +499,11 @@ footer {
         scale: 1.02;
     }
     /* Descripcion con hover sobre el article */
-
     .caja:hover > .description{
         display: block;
     }
-
+    
+    .copyright p{
+    text-align: start;
+    } 
   }
-  
-
-
-
-

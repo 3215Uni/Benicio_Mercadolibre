@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi ecommerce</title>
     <link rel="shortcut icon" type="image/x-icon" href="./public/img/logoMercadolibre.jpg">
-    <link rel="stylesheet" href="/css/home.css">
+    
     <link rel="stylesheet" href="/css/login.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,26 +18,27 @@
 <body>
     <header class="header-top">
         <!-- Encabezado PRINCIPAL-->
-        <div class="top">
+        <div class="bo top">
             <a class="logoE" href="./">
-                <img id="logo" title="ecommerce" src="/img/logo.svg" >
+                <img class="cen log" id="logo" title="ecommerce" src="/img/logo.svg" >
             </a>
             <h1 hidden>Mi ecommerce</h1>
-            <form id="busqueda" aria-label="search" action="/">
-                <input type="text">
+            <form  id="busqueda" aria-label="search" action="/">
+                <input  type="text">
                 <button>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
-            <br>
-            <div class="cart">
-                <a href="#cart">
+            
+            <div class="centro">
+                <a class="credito" href="#cart">
                     <i class="fas fa-hand-holding-usd"></i>
                     Compra en cuotas y sin tarjeta de credito 
                 </a>
             </div>
-            <div class="menu-bars">
-                <i class="fa-solid fa-bars"></i>
+            <br>
+            <div class="centro menu-bars">
+                <i class="dolar fa-solid fa-bars"></i>
             </div>
         </div>
 
@@ -45,7 +46,7 @@
             <div class="menu-bars">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <nav>
+            <nav class="nav1">
                 <!-- Lista desordenada -->
                 <ul>
                     <li class="nav-item">
@@ -68,7 +69,7 @@
                 </ul>
             </nav>
     
-            <nav>
+            <nav class="nav2">
                 <!-- Lista desordenada -->
                 <ul class="list">
                     <li>
@@ -92,13 +93,17 @@
                     <br>
                     
                     <form action="">               
+                        <label class="form-login" for="">Nombre de usuario</label>
+                        <br>
                         <input placeholder="Nombre de Usuario" type="text" id="txtUsername" required="true">
                         <br/>
+                        <br>
+                        <label class="form-login" for="">Contraseña</label>
                         <br/>
-                        <input  placeholder="Elegí tu contraseña" type="password" id="txtPassword" required="true">
+                        <input  placeholder="Ingrese contraseña" type="password" id="txtPassword" required="true">
                         <br/>
                         <br/>
-                        <button class="btn-login boton-login">Enviar</button>
+                        <button href="./home.html" class="btn-login boton-login">Enviar</button>
                         <br>
                     </form>
                 </div>
@@ -107,7 +112,7 @@
     </main>
 
     <footer>
-       
+            <br>       
             <div class="footer-section footer-section-1" >
                 <h2 class="footer-icono"><i class="fa-solid fa-credit-card"></i></h2>
                 <br>
@@ -116,24 +121,20 @@
                 <br>
                 <br>
             </div>
-            
             <div class="footer-section">
                 <h2 class="footer-icono"><i class="fa-solid fa-gift"></i></h2>
                 <br>
                 <h3 class="footer-titulo">Envío gratis desde $2.500</h3>
                 <p class="footer-parrafo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                <br>            
                 <br>
-                <br>
-            </div>
-            
+            </div>            
             <div class="footer-section">
                 <h2 class="footer-icono"><i class="fa-solid fa-user-shield"></i></h2>
                 <br>
                 <h3 class="footer-titulo">Seguridad, de principio a fin</h3>
                 <p class="footer-parrafo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
             </div>
-       
-            <br>    
         <div class="copyright">
             <br>    
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
