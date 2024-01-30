@@ -34,9 +34,7 @@ body{
 /*Logo de mercadolibre*/
 img#logo{
     width: 50%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 2%;
+    
     padding: 0%;
     border: 0%;
 }
@@ -76,6 +74,7 @@ form#busqueda >  button{
 
 button > .fa-magnifying-glass{
     color: rgb(145, 145, 145);
+    
     font-size: 10px;
 }
 
@@ -95,9 +94,16 @@ a:visited{
     align-items: center;
     
 }
+.banner{   
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
 /* main */
 main{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 100vw;
     background-color: rgb(235, 234, 234);
@@ -310,9 +316,7 @@ footer {
     .caja:hover > .description{
         display: block;
     }
-    .bo {
-        justify-content: center;        
-    }
+    
 
 }
 @media (min-width: 361px){
