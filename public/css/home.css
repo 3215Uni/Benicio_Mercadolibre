@@ -7,7 +7,7 @@
 body{
     /*background: rgba(5, 152, 249, 0.479);*/
 /*   background: rgba(252, 222, 0);*/
-    /*background:#FFE600;*/
+    /*background:#000000;*/
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
     
@@ -29,7 +29,7 @@ body{
     padding: 1% 0%;
     width: 100%;
     display: inline-flex;
-    background:#FFE600;
+    background:#000000;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -44,7 +44,7 @@ img#logo{
 
 .header-bottom{
     display: none;
-    background:#FFE600;
+    background:#000000;
 }
 /*BARRITA DE BUSQUEDA CON ICONO LUPA*/
 .top > form#busqueda{
@@ -69,7 +69,7 @@ form#busqueda >  button{
     background-color: white;
     padding: 10px;
     border: 1px solid transparent;
-    border-left: 1px  solid #FFE600;
+    border-left: 1px  solid #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,12 +82,12 @@ button > .fa-magnifying-glass{
 
 a {
     font-size: 1em;
-    color: black;
+    color: white;
     text-decoration: none;    
 }
 
 a:visited{
-    color: black;
+    color: white;
 }
 
 .hamburguesa{
@@ -149,7 +149,7 @@ article{
 .corazon{
     position: absolute;
     top: 10px;
-    color: #3483fa;
+    color: black;
     right: 10px;
 }
 
@@ -284,7 +284,7 @@ footer {
 .footer-icono{
     size: 2em;
     text-align: center;
-    color: #3483fa;
+    color: black;
 }
 .footer-icono:hover{
     color: #1259c3;
@@ -365,7 +365,7 @@ footer {
         }
         nav{
         padding: 10px 0px;
-        background-color: #FFE600;        /*EL color del seguna columnas donde esta elnav de menu*/
+        background-color: #000000;        /*EL color del seguna columnas donde esta elnav de menu*/
         width: 50%;
         }
         ul{
@@ -404,7 +404,7 @@ footer {
     }
     .header-bottom{
         display: flex;
-        background:#FFE600;
+        background:#000000;
     }
     ul{
         list-style-type: none;
@@ -462,7 +462,7 @@ footer {
 /*EL color del seguna columnas donde esta elnav de menu*/
     nav{
         padding: 10px 0px;
-        background-color: #FFE600;        
+        background-color: #000000;        
 /*        width: 50%;*/
     }
     ul{
@@ -481,7 +481,7 @@ footer {
     }
 
     a{
-        color: black;
+        color: white;
         text-decoration: none;
     }
     a:visited{

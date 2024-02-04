@@ -7,7 +7,7 @@
    body{
        /*background: rgba(5, 152, 249, 0.479);*/
    /*   background: rgba(252, 222, 0);*/
-       /*background:#FFE600;*/
+       /*background:#000000;*/
        background-color: #ebebeb;
        font-family: 'Roboto', sans-serif;
        
@@ -24,7 +24,7 @@
        padding: 1% 0%;
        width: 100%;
        display: flex;
-       background:#FFE600;
+       background:#000000;
        align-items: center;
        justify-content: space-evenly;
    }
@@ -38,7 +38,7 @@
    
    .header-bottom{
        display: none;
-       background:#FFE600;
+       background:#000000;
    }
    /*BARRITA DE BUSQUEDA CON ICONO LUPA*/
    .top > form#busqueda{
@@ -64,7 +64,7 @@
        background-color: white;
        padding: 10px;
        border: 1px solid transparent;
-       border-left: 1px  solid #FFE600;
+       border-left: 1px  solid #000000;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -77,13 +77,13 @@
    }
    
    a{
-       color: black;
+       color: white;
        text-decoration: none;    
        font-size: 1em;
    }
    
    a:visited{
-       color: black;
+       color: white;
    }
    .cen{
     align-content: center;
@@ -166,7 +166,7 @@ input{
 }
 .btn-login{
     width: 94%;
-    background-color: #3483fa;
+    background-color: black;
     display: inline ;
     padding: 10px;
     text-align: auto;
@@ -201,7 +201,7 @@ footer {
 .footer-icono{
     size: 2em;
     text-align: center;
-    color: #3483fa;
+    color: black;
 }
 .footer-icono:hover{
     color: #1259c3;
@@ -280,13 +280,13 @@ footer {
         justify-content: space-between;
     }
     a{
-        color: black;
+        color: white;
         text-decoration: none;
     }
     
     nav{
         padding: 10px 0px;
-        background-color: #FFE600;        /*EL color del seguna columnas donde esta elnav de menu*/
+        background-color: #000000;        /*EL color del seguna columnas donde esta elnav de menu*/
         width: 50%;
     }
     ul{
@@ -306,7 +306,7 @@ footer {
     a{
         
         font-size: 1.7vw;
-        color: black;
+        color: white;
         text-decoration: none;
     }
 
@@ -416,7 +416,7 @@ footer {
 
     nav{
         padding: 10px 0px;
-        background-color: #FFE600;        /*EL color del seguna columnas donde esta elnav de menu*/
+        background-color: #000000;        /*EL color del seguna columnas donde esta elnav de menu*/
         
     }
     ul{
@@ -434,7 +434,7 @@ footer {
         color: #0022AA;
     }
     a{
-        color: black;
+        color: white;
         font-size: 1em;
         text-decoration: none;
     }
